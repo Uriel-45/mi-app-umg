@@ -1,5 +1,8 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import './App.css';
+
+// Cargar el componente About de manera perezosa (lazy loading)
+const About = lazy(() => import('./About'));
 
 function App() {
   return (
@@ -22,10 +25,10 @@ function App() {
       </header>
 
       <main className="container">
-        <section id="about" className="my-5">
-          <h2 className="text-center">Acerca de Nosotros</h2>
-          <p className="lead text-center">Esta sección contiene información sobre nuestro proyecto y objetivos.</p>
-        </section>
+        {/* Componente About cargado con lazy y Suspense */}
+        <Suspense fallback={<div>Cargando...</div>}>
+          <About />
+        </Suspense>
 
         <section id="services" className="my-5">
           <h2 className="text-center">Nuestros Servicios</h2>
