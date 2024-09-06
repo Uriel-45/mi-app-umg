@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 
 function DataDisplay() {
   useEffect(() => {
-    const apiUrl = 'https://jsonplaceholder.typicode.com/posts'; // Reemplaza con la URL de tu API real
+    const apiUrl = 'https://jsonplaceholder.typicode.com/posts'; 
 
     fetch(apiUrl)
       .then(response => {

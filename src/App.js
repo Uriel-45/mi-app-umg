@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Bienvenidos a Mi-Proyecto-Web PURA PERDIDA</h1>
+        <h1>Bienvenidos a Mi-Proyecto-Web PURA PÉRDIDA!!!!!!!!</h1>
         <nav>
           <ul className="nav justify-content-center">
             <li className="nav-item">
@@ -42,11 +42,18 @@ function App() {
             <li className="list-group-item">Desarrollo Web</li>
             <li className="list-group-item">Aplicaciones Móviles</li>
             <li className="list-group-item">Optimización SEO</li>
+            <li className="list-group-item">Migración y Optimización de Sistemas Legacy</li>
+            <li className="list-group-item">Análisis de Big Data y Machine Learning</li>
+            <li className="list-group-item">Consultoría en TI</li>
+            <li className="list-group-item">Implementación de Infraestructura en la Nube</li>
           </ul>
         </section>
 
         <section id="contact" className="my-5">
           <h2 className="text-center">Contáctanos</h2>
+          <p className="text-center">
+    Estamos aquí para ayudarte. Si tienes alguna pregunta, inquietud o simplemente deseas obtener más información sobre nuestros servicios, no dudes en ponerte en contacto con nosotros.
+  </p>
           <form id="contactForm" className="text-center">
             <div className="form-group">
               <label htmlFor="name">Nombre:</label>
