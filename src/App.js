@@ -1,7 +1,7 @@
 import React, { Suspense, lazy } from 'react';
 import './App.css';
 import logo from './satoru gojo.jpg'; 
-
+// xxxx
 // Cargar el componente About  (lazy loading)
 const About = lazy(() => import('./About'));
 const DataDisplay = lazy(() => import('./DataDisplay'));
