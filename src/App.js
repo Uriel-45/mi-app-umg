@@ -3,16 +3,17 @@ import './App.css';
 
 // Cargar el componente About de manera perezosa (lazy loading)
 const About = lazy(() => import('./About'));
+const DataDisplay = lazy(() => import('./DataDisplay'));
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Bienvenido a Mi Aplicación React</h1>
+        <h1>Bienvenidos a Mi-Proyecto-Web PURA PERDIDA</h1>
         <nav>
           <ul className="nav justify-content-center">
             <li className="nav-item">
-              <a className="nav-link" href="#about">Acerca de</a>
+              <a className="nav-link" href="#about">Acerca de este proyecto</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#services">Servicios</a>
@@ -28,6 +29,11 @@ function App() {
         {/* Componente About cargado con lazy y Suspense */}
         <Suspense fallback={<div>Cargando...</div>}>
           <About />
+        </Suspense>
+
+        {/* Componente DataDisplay cargado con lazy y Suspense */}
+        <Suspense fallback={<div>Cargando datos...</div>}>
+          <DataDisplay />
         </Suspense>
 
         <section id="services" className="my-5">
@@ -63,3 +69,4 @@ function App() {
 }
 
 export default App;
+
