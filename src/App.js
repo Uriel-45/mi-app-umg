@@ -1,7 +1,8 @@
 import React, { Suspense, lazy } from 'react';
 import './App.css';
+import logo from './satoru gojo.jpg'; 
 
-// Cargar el componente About de manera perezosa (lazy loading)
+// Cargar el componente About  (lazy loading)
 const About = lazy(() => import('./About'));
 const DataDisplay = lazy(() => import('./DataDisplay'));
 
@@ -9,11 +10,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <img src={logo} alt="Logo" /> {/* Imagen  */}
         <h1>Bienvenidos a Mi-Proyecto-Web PURA PÉRDIDA!!!!!!!!</h1>
         <nav>
           <ul className="nav justify-content-center">
             <li className="nav-item">
-              <a className="nav-link" href="#about">Acerca de este proyecto</a>
+              <a className="nav-link" href="#about">Acerca de Nosotros</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#services">Servicios</a>
@@ -52,8 +54,8 @@ function App() {
         <section id="contact" className="my-5">
           <h2 className="text-center">Contáctanos</h2>
           <p className="text-center">
-    Estamos aquí para ayudarte. Si tienes alguna pregunta, inquietud o simplemente deseas obtener más información sobre nuestros servicios, no dudes en ponerte en contacto con nosotros.
-  </p>
+            Estamos aquí para ayudarte. Si tienes alguna pregunta, inquietud o simplemente deseas obtener más información sobre nuestros servicios, no dudes en ponerte en contacto con nosotros.
+          </p>
           <form id="contactForm" className="text-center">
             <div className="form-group">
               <label htmlFor="name">Nombre:</label>
